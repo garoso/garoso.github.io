@@ -1,4 +1,4 @@
-/* Minimalist CV Design */
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Top Bar */
+/* Layout Components */
 .top-bar {
     position: fixed;
     top: 0;
@@ -23,6 +23,7 @@ body {
     right: 0;
     height: 60px;
     background-color: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,15 +32,13 @@ body {
     box-shadow: 0 2px 8px var(--shadow);
 }
 
-.left-buttons {
+.left-buttons, .right-buttons {
     display: flex;
     align-items: center;
-    gap: 15px;
 }
 
-.right-buttons {
-    display: flex;
-    align-items: center;
+.left-buttons {
+    gap: 15px;
 }
 
 .container {
@@ -49,7 +48,7 @@ body {
     padding-top: 80px; /* Space for top bar */
 }
 
-/* Header */
+/* Header Section */
 .header {
     margin-bottom: 30px;
     border-bottom: 2px solid var(--border-color);
@@ -59,14 +58,14 @@ body {
 .profile-section {
     display: flex;
     align-items: flex-start;
-    gap: 0;
 }
 
 .profile-info {
     flex: 1;
 }
 
-.theme-toggle {
+/* Button Components */
+.theme-toggle, .language-toggle {
     background: none;
     border: 2px solid var(--border-color);
     color: var(--text-color);
@@ -82,34 +81,13 @@ body {
     box-shadow: 0 2px 8px var(--shadow);
 }
 
-.theme-toggle:hover {
+.theme-toggle:hover, .language-toggle:hover {
     background: var(--hover-color);
     transform: scale(1.05);
     box-shadow: 0 4px 12px var(--shadow-hover);
 }
 
-.language-toggle {
-    background: none;
-    border: 2px solid var(--border-color);
-    color: var(--text-color);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px var(--shadow);
-}
-
-.language-toggle:hover {
-    background: var(--hover-color);
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px var(--shadow-hover);
-}
-
+/* Typography */
 .name {
     font-size: 2.2rem;
     font-weight: 700;
@@ -141,16 +119,12 @@ body {
     color: var(--text-secondary);
 }
 
-/* Sections */
+/* Section Components */
 .section {
     margin-bottom: 25px;
 }
 
-.section.full-width {
-    width: 100%;
-}
-
-.section.column {
+.section.full-width, .section.column {
     width: 100%;
 }
 
@@ -165,7 +139,7 @@ body {
     padding-bottom: 6px;
 }
 
-/* Two Column Layout */
+/* Grid Layout */
 .two-column-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -173,7 +147,7 @@ body {
     margin-bottom: 25px;
 }
 
-/* Professional Summary */
+/* Content Sections */
 .summary-text {
     font-size: 1rem;
     line-height: 1.6;
@@ -181,7 +155,6 @@ body {
     text-align: justify;
 }
 
-/* Skills */
 .skills-grid {
     display: flex;
     flex-direction: column;
@@ -205,22 +178,26 @@ body {
     line-height: 1.4;
 }
 
-/* Experience */
-.experience-item {
+/* Experience & Education */
+.experience-item, .education-item {
     margin-bottom: 18px;
     padding-bottom: 15px;
     border-bottom: 1px solid var(--border-light);
 }
 
-.experience-item:last-child {
+.experience-item:last-child, .education-item:last-child {
     border-bottom: none;
 }
 
-.experience-header {
+.experience-header, .education-header {
     margin-bottom: 10px;
 }
 
-.company {
+.education-header {
+    margin-bottom: 8px;
+}
+
+.company, .institution {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 3px;
@@ -231,6 +208,19 @@ body {
     font-size: 0.85rem;
     color: var(--text-secondary);
     font-weight: 500;
+}
+
+.degree {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: var(--text-secondary);
+}
+
+.description {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
 }
 
 .achievements {
@@ -255,42 +245,7 @@ body {
     font-weight: bold;
 }
 
-/* Education */
-.education-item {
-    margin-bottom: 18px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid var(--border-light);
-}
-
-.education-item:last-child {
-    border-bottom: none;
-}
-
-.education-header {
-    margin-bottom: 8px;
-}
-
-.institution {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 3px;
-    color: var(--text-color);
-}
-
-.degree {
-    font-size: 0.95rem;
-    font-weight: 500;
-    margin-bottom: 6px;
-    color: var(--text-secondary);
-}
-
-.description {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    line-height: 1.5;
-}
-
-/* Languages */
+/* Languages & Contact */
 .languages p {
     font-size: 0.95rem;
     margin-bottom: 8px;
@@ -302,7 +257,6 @@ body {
     color: var(--text-color);
 }
 
-/* Contact & Social */
 .contact-info {
     text-align: center;
     padding: 25px 0;
@@ -366,10 +320,8 @@ body {
     
     .container {
         padding: 20px 15px;
-        padding-top: 70px; /* Space for top bar */
+        padding-top: 70px;
     }
-    
-
     
     .profile-section {
         flex-direction: column;
@@ -385,7 +337,6 @@ body {
         font-size: 1rem;
     }
     
-    /* Stack columns on mobile */
     .two-column-layout {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -415,10 +366,8 @@ body {
     
     .container {
         padding: 15px 10px;
-        padding-top: 65px; /* Space for top bar */
+        padding-top: 65px;
     }
-    
-
     
     .name {
         font-size: 1.6rem;
@@ -441,7 +390,7 @@ body {
     }
 }
 
-/* Print styles */
+/* Print Styles */
 @media print {
     body {
         font-size: 11px;
@@ -471,21 +420,20 @@ body {
     }
 }
 
-/* Download button styles */
 .download-button {
-    background: var(--button-bg) !important;
-    color: var(--button-text) !important;
-    border: none !important;
-    padding: 10px 15px !important;
-    border-radius: 5px !important;
-    cursor: pointer !important;
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 14px !important;
-    transition: all 0.3s ease !important;
-    box-shadow: 0 2px 8px var(--shadow) !important;
-    display: flex !important;
-    align-items: center !important;
-    gap: 8px !important;
+    background: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 /* Footer download button - hidden by default */
@@ -493,41 +441,29 @@ body {
     display: none !important;
 }
 
-/* Mobile styles for buttons */
+/* Mobile Button Styles */
 @media (max-width: 768px) {
-    .theme-toggle {
-        width: 35px;
-        height: 35px;
-        font-size: 14px;
-    }
-    
-    .language-toggle {
+    .theme-toggle, .language-toggle {
         width: 35px;
         height: 35px;
         font-size: 14px;
     }
     
     .download-button {
-        padding: 8px 12px !important;
-        font-size: 12px !important;
+        padding: 8px 12px;
+        font-size: 12px;
     }
 }
 
 @media (max-width: 480px) {
-    .theme-toggle {
-        width: 32px;
-        height: 32px;
-        font-size: 12px;
-    }
-    
-    .language-toggle {
+    .theme-toggle, .language-toggle {
         width: 32px;
         height: 32px;
         font-size: 12px;
     }
     
     .download-button {
-        padding: 6px 10px !important;
-        font-size: 11px !important;
+        padding: 6px 10px;
+        font-size: 11px;
     }
 }
