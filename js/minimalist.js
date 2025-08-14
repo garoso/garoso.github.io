@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     // Utility function for hover effects
-    function addHoverEffect(selector, hoverColor = '#eeeeee') {
+    function addHoverEffect(selector, hoverColor = 'var(--hover-color)') {
         const elements = document.querySelectorAll(selector);
         elements.forEach(item => {
             item.addEventListener('mouseenter', function() {
@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', function() {
     addHoverEffect('.experience-item');
     addHoverEffect('.education-item');
     addHoverEffect('.skill-category');
-    addHoverEffect('.languages', '#eeeeee');
-    addHoverEffect('.header', '#fafafa');
-    addHoverEffect('.summary-text', '#fafafa');
+    addHoverEffect('.languages', 'var(--hover-color)');
+    addHoverEffect('.header', 'var(--hover-light)');
+    addHoverEffect('.summary-text', 'var(--hover-light)');
 
     // PDF Download Configuration
     const PDF_URL = 'assets/documents/David_Ardila_CV.pdf';
@@ -49,15 +49,15 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     
     downloadButton.addEventListener('mouseenter', function() {
-        this.style.background = '#555';
+        this.style.background = 'var(--button-hover)';
         this.style.transform = 'translateY(-2px)';
-        this.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+        this.style.boxShadow = '0 4px 12px var(--shadow-hover)';
     });
     
     downloadButton.addEventListener('mouseleave', function() {
-        this.style.background = '#333';
+        this.style.background = 'var(--button-bg)';
         this.style.transform = '';
-        this.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
+        this.style.boxShadow = '0 2px 8px var(--shadow)';
     });
     
     downloadButton.addEventListener('click', function() {
@@ -143,4 +143,31 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     console.log('Minimalist CV loaded successfully! 🚀');
+});
+
+// Theme toggle function
+function toggleTheme() {
+    const body = document.body;
+    const themeToggle = document.querySelector('.theme-toggle i');
+    
+    if (body.getAttribute('data-theme') === 'dark') {
+        body.removeAttribute('data-theme');
+        themeToggle.className = 'fas fa-sun';
+        localStorage.setItem('theme', 'light');
+    } else {
+        body.setAttribute('data-theme', 'dark');
+        themeToggle.className = 'fas fa-moon';
+        localStorage.setItem('theme', 'dark');
+    }
+}
+
+// Load saved theme on page load
+document.addEventListener('DOMContentLoaded', function() {
+    const savedTheme = localStorage.getItem('theme');
+    const themeToggle = document.querySelector('.theme-toggle i');
+    
+    if (savedTheme === 'dark') {
+        document.body.setAttribute('data-theme', 'dark');
+        themeToggle.className = 'fas fa-moon';
+    }
 });
