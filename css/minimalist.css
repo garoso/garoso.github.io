@@ -23,7 +23,6 @@ body {
     right: 0;
     height: 60px;
     background-color: var(--bg-color);
-    border-bottom: 1px solid var(--border-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
