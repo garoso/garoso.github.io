@@ -1,0 +1,442 @@
+/* Minimalist CV Design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* Header */
+.header {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 20px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #333;
+    letter-spacing: -0.5px;
+}
+
+.title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #666;
+}
+
+.location {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0;
+}
+
+.location a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+}
+
+.location a:hover {
+    color: #666;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 25px;
+}
+
+.section.full-width {
+    width: 100%;
+}
+
+.section.column {
+    width: 100%;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 6px;
+}
+
+/* Two Column Layout */
+.two-column-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+/* Professional Summary */
+.summary-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+/* Skills */
+.skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill-category {
+    margin-bottom: 10px;
+}
+
+.skill-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.skill-list {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Experience */
+.experience-item {
+    margin-bottom: 18px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+.experience-header {
+    margin-bottom: 10px;
+}
+
+.company {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 3px;
+    color: #333;
+}
+
+.period {
+    font-size: 0.85rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.achievements {
+    list-style: none;
+    padding-left: 0;
+}
+
+.achievements li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 6px;
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.achievements li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Education */
+.education-item {
+    margin-bottom: 18px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.education-item:last-child {
+    border-bottom: none;
+}
+
+.education-header {
+    margin-bottom: 8px;
+}
+
+.institution {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 3px;
+    color: #333;
+}
+
+.degree {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #666;
+}
+
+.description {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Languages */
+.languages p {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    color: #555;
+    padding: 5px 0;
+}
+
+.languages strong {
+    color: #333;
+}
+
+/* Contact & Social */
+.contact-info {
+    text-align: center;
+    padding: 25px 0;
+    border-top: 2px solid #333;
+}
+
+.availability, .mission, .connect {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: #333;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.social-link i {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .two-column-layout {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 15px;
+    }
+    
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .name {
+        font-size: 1.8rem;
+    }
+    
+    .title {
+        font-size: 1rem;
+    }
+    
+    /* Stack columns on mobile */
+    .two-column-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .social-link {
+        width: 180px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px 10px;
+    }
+    
+    .name {
+        font-size: 1.6rem;
+    }
+    
+    .section-title {
+        font-size: 1.2rem;
+    }
+    
+    .company, .institution {
+        font-size: 0.95rem;
+    }
+    
+    .achievements li {
+        font-size: 0.8rem;
+    }
+    
+    .two-column-layout {
+        gap: 18px;
+    }
+}
+
+/* Print styles */
+@media print {
+    body {
+        font-size: 11px;
+        line-height: 1.3;
+    }
+    
+    .container {
+        max-width: none;
+        padding: 15px;
+    }
+    
+    .name {
+        font-size: 1.6rem;
+    }
+    
+    .section {
+        margin-bottom: 20px;
+    }
+    
+    .two-column-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    
+    .social-links {
+        display: none;
+    }
+}
+
+/* Download button styles */
+.download-button {
+    position: fixed !important;
+    top: 20px !important;
+    right: 20px !important;
+    background: #333 !important;
+    color: white !important;
+    border: none !important;
+    padding: 10px 15px !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 14px !important;
+    z-index: 1000 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+}
+
+/* Footer download button - hidden by default */
+.footer-download {
+    display: none !important;
+}
+
+/* Mobile styles for download button */
+@media (max-width: 768px) {
+    .download-button {
+        top: 10px !important;
+        right: 10px !important;
+        padding: 8px 12px !important;
+        font-size: 12px !important;
+        min-width: auto !important;
+        white-space: nowrap !important;
+    }
+    
+    .footer-download {
+        display: none !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .download-button {
+        display: none !important;
+    }
+    
+    /* Footer download button for mobile */
+    .footer-download {
+        display: inline-block !important;
+        background: #333 !important;
+        color: white !important;
+        border: none !important;
+        padding: 8px 12px !important;
+        border-radius: 5px !important;
+        cursor: pointer !important;
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 12px !important;
+        transition: all 0.3s ease !important;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+        margin-top: 10px !important;
+        text-decoration: none !important;
+    }
+    
+    .footer-download:hover {
+        background: #555 !important;
+        transform: translateY(-1px) !important;
+    }
+}
