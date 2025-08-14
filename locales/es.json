@@ -1,0 +1,88 @@
+{
+  "header": {
+    "title": "Desarrollador Ruby on Rails · Release Manager",
+    "location": "Bello, Colombia · +57 319 319 8830 · david.fd.251@gmail.com"
+  },
+  "buttons": {
+    "toggle_theme": "Cambiar tema",
+    "download_pdf": "Descargar PDF"
+  },
+  "sections": {
+    "professional_summary": "RESUMEN PROFESIONAL",
+    "skills": "HABILIDADES",
+    "languages": "IDIOMAS",
+    "experience": "EXPERIENCIA PROFESIONAL",
+    "education": "EDUCACIÓN"
+  },
+  "summary": {
+    "text": "Desarrollador de Software especializado en desarrollo backend y arquitectura de sistemas, con sólida experiencia en Ruby on Rails, CI/CD y entornos cloud (AWS). He definido procesos de despliegue para equipos multidisciplinarios (más de 80 repositorios), optimizado trabajos críticos para mejorar el rendimiento hasta en un 250%, y diseñado pipelines de datos escalables (Airflow → data lake → almacenamiento de datos) que alimentan aplicaciones principales e integraciones. Combino rigor técnico alto con liderazgo colaborativo para elevar el rendimiento del equipo y entregar sistemas confiables y mantenibles."
+  },
+  "skills": {
+    "programming": "Lenguajes:",
+    "frameworks": "Frameworks y Testing:",
+    "devops": "DevOps y Cloud:",
+    "databases": "Bases de Datos:",
+    "practices": "Prácticas y Herramientas:",
+    "ai_tools": "Herramientas de IA:"
+  },
+  "languages": {
+    "spanish": "Español — Nativo",
+    "english": "Inglés — Competencia Profesional (B2)"
+  },
+  "experience": {
+    "forusall": {
+      "title": "ForUsAll — Ingeniero de Software",
+      "period": "Ago 2024 – Ago 2025 · Medellín, Colombia · Híbrido",
+      "achievements": [
+        "Diseñé e implementé una arquitectura basada en Airflow para alimentar un data lake y transformarlo en un almacenamiento de datos que potencia la aplicación principal y múltiples integraciones.",
+        "Refactoricé un background job crítico de +500 líneas en 5 componentes modulares, eliminando errores de producción y mejorando el rendimiento en ~250%.",
+        "Contribuí a las definiciones de producto, proponiendo soluciones escalables y de bajo mantenimiento alineadas con los objetivos del negocio."
+      ]
+    },
+    "abatech_rm": {
+      "title": "ABATECH — Software Release Manager",
+      "period": "Abr 2023 – Jul 2024 · Medellín, Colombia · Híbrido",
+      "achievements": [
+        "Definí e implementé procesos de release y despliegue para equipos multidisciplinarios, gestionando más de 80 repositorios activos.",
+        "Trabajé en arquitecturas: microfrontends, AWS Lambdas, monolíticos y microservicios.",
+        "Coordiné equipos de frontend, backend y DevOps para alinear cronogramas de release, resolver bloqueos y asegurar despliegues fluidos."
+      ]
+    },
+    "abatech_dev": {
+      "title": "ABATECH — Desarrollador Back End",
+      "period": "Sep 2022 – Abr 2023 · Medellín, Colombia · Híbrido",
+      "achievements": [
+        "Construí y mantuve servicios backend en Ruby on Rails, mejorando la confiabilidad y rendimiento de características principales.",
+        "Integré CI/CD con Jenkins y GitHub Actions para agilizar despliegues y reducir fallas.",
+        "Mejoré la observabilidad del sistema y manejo de errores, contribuyendo a una resolución más rápida de incidentes."
+      ]
+    },
+    "cobelen": {
+      "title": "Cobelén — Desarrollador Web (Apolo ERP)",
+      "period": "Dic 2021 – Sep 2022 · Medellín, Colombia",
+      "achievements": [
+        "Refactoricé un proceso contable anual de alto volumen para generar reportes gubernamentales, mejorando significativamente el rendimiento y cumplimiento.",
+        "Implementé una vista materializada actualizada por trabajos programados, permitiendo generación rápida y confiable de reportes en formatos legales estrictos.",
+        "Mantuve y mejoré características del ERP con enfoque en rendimiento backend e integridad de datos."
+      ]
+    }
+  },
+  "education": {
+    "makeitreal": {
+      "title": "Make It Real Camp",
+      "period": "Julio 2018 – Abril 2019",
+      "degree": "Curso Online de Desarrollo Web",
+      "description": "Completé un programa online intensivo enfocado en el framework Ruby on Rails, siguiendo la ruta de aprendizaje full-stack proporcionada por Make It Real. Desarrollé un enfoque proactivo para el aprendizaje continuo, expandiendo conocimientos técnicos y habilidades de resolución de problemas."
+    },
+    "uniminuto": {
+      "title": "Uniminuto",
+      "period": "Diciembre 2012",
+      "degree": "Tecnología en Computación e ICT4D",
+      "description": "Comencé formación académica en tecnología informática con enfoque en tecnologías de información y comunicación para el desarrollo. Fortalecí conocimientos fundamentales en programación y desarrollo web, fomentando un compromiso temprano para convertirme en un desarrollador profesional."
+    }
+  },
+  "footer": {
+    "mission": "Entregando sistemas escalables, confiables y mantenibles a través de la excelencia técnica y liderazgo colaborativo.",
+    "connect": "Abierto a colaboraciones potenciales y nuevas oportunidades en desarrollo backend o arquitectura de sistemas. Conectemos."
+  }
+}

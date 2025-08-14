@@ -15,10 +15,38 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Top Bar */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+.left-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.right-buttons {
+    display: flex;
+    align-items: center;
+}
+
 .container {
     max-width: 1500px;
     margin: 0 auto;
     padding: 30px 20px;
+    padding-top: 80px; /* Space for top bar */
 }
 
 /* Header */
@@ -26,7 +54,6 @@ body {
     margin-bottom: 30px;
     border-bottom: 2px solid var(--border-color);
     padding-bottom: 20px;
-    padding-top: 60px; /* Add top padding to prevent overlap with fixed theme toggle */
 }
 
 .profile-section {
@@ -40,9 +67,6 @@ body {
 }
 
 .theme-toggle {
-    position: fixed;
-    top: 20px;
-    left: 20px;
     background: none;
     border: 2px solid var(--border-color);
     color: var(--text-color);
@@ -55,11 +79,32 @@ body {
     justify-content: center;
     font-size: 16px;
     transition: all 0.3s ease;
-    z-index: 1000;
     box-shadow: 0 2px 8px var(--shadow);
 }
 
 .theme-toggle:hover {
+    background: var(--hover-color);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px var(--shadow-hover);
+}
+
+.language-toggle {
+    background: none;
+    border: 2px solid var(--border-color);
+    color: var(--text-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+.language-toggle:hover {
     background: var(--hover-color);
     transform: scale(1.05);
     box-shadow: 0 4px 12px var(--shadow-hover);
@@ -310,13 +355,21 @@ body {
 }
 
 @media (max-width: 768px) {
-    .container {
-        padding: 20px 15px;
+    .top-bar {
+        height: 50px;
+        padding: 0 15px;
     }
     
-    .header {
-        padding-top: 50px; /* Reduce top padding for medium screens */
+    .left-buttons {
+        gap: 12px;
     }
+    
+    .container {
+        padding: 20px 15px;
+        padding-top: 70px; /* Space for top bar */
+    }
+    
+
     
     .profile-section {
         flex-direction: column;
@@ -351,13 +404,21 @@ body {
 }
 
 @media (max-width: 480px) {
-    .container {
-        padding: 15px 10px;
+    .top-bar {
+        height: 45px;
+        padding: 0 10px;
     }
     
-    .header {
-        padding-top: 45px; /* Further reduce top padding for small screens */
+    .left-buttons {
+        gap: 10px;
     }
+    
+    .container {
+        padding: 15px 10px;
+        padding-top: 65px; /* Space for top bar */
+    }
+    
+
     
     .name {
         font-size: 1.6rem;
@@ -412,9 +473,6 @@ body {
 
 /* Download button styles */
 .download-button {
-    position: fixed !important;
-    top: 20px !important;
-    right: 20px !important;
     background: var(--button-bg) !important;
     color: var(--button-text) !important;
     border: none !important;
@@ -423,9 +481,11 @@ body {
     cursor: pointer !important;
     font-family: 'Montserrat', sans-serif !important;
     font-size: 14px !important;
-    z-index: 1000 !important;
     transition: all 0.3s ease !important;
     box-shadow: 0 2px 8px var(--shadow) !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
 }
 
 /* Footer download button - hidden by default */
@@ -433,62 +493,41 @@ body {
     display: none !important;
 }
 
-/* Mobile styles for download button */
+/* Mobile styles for buttons */
 @media (max-width: 768px) {
-    .download-button {
-        top: 10px !important;
-        right: 10px !important;
-        padding: 8px 12px !important;
-        font-size: 12px !important;
-        min-width: auto !important;
-        white-space: nowrap !important;
-    }
-    
     .theme-toggle {
-        top: 10px;
-        left: 10px;
         width: 35px;
         height: 35px;
         font-size: 14px;
     }
     
-    .footer-download {
-        display: none !important;
+    .language-toggle {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+    
+    .download-button {
+        padding: 8px 12px !important;
+        font-size: 12px !important;
     }
 }
 
 @media (max-width: 480px) {
-    .download-button {
-        display: none !important;
-    }
-    
     .theme-toggle {
-        top: 8px;
-        left: 8px;
         width: 32px;
         height: 32px;
         font-size: 12px;
     }
     
-    /* Footer download button for mobile */
-    .footer-download {
-        display: inline-block !important;
-        background: var(--button-bg) !important;
-        color: var(--button-text) !important;
-        border: none !important;
-        padding: 8px 12px !important;
-        border-radius: 5px !important;
-        cursor: pointer !important;
-        font-family: 'Montserrat', sans-serif !important;
-        font-size: 12px !important;
-        transition: all 0.3s ease !important;
-        box-shadow: 0 2px 8px var(--shadow) !important;
-        margin-top: 10px !important;
-        text-decoration: none !important;
+    .language-toggle {
+        width: 32px;
+        height: 32px;
+        font-size: 12px;
     }
     
-    .footer-download:hover {
-        background: var(--button-hover) !important;
-        transform: translateY(-1px) !important;
+    .download-button {
+        padding: 6px 10px !important;
+        font-size: 11px !important;
     }
 }

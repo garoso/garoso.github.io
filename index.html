@@ -13,27 +13,41 @@
     <script src="https://kit.fontawesome.com/718254ba46.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Fixed Top Bar -->
+    <div class="top-bar">
+        <div class="left-buttons">
+            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+
+            <button class="language-toggle" onclick="toggleLanguage()" title="Change language">
+                ES
+            </button>
+        </div>
+        
+        <div class="right-buttons">
+            <button class="download-button" onclick="downloadPDF()" title="Download PDF">
+                <i class="fas fa-download"></i> Download PDF
+            </button>
+        </div>
+    </div>
+
     <div class="container">
         <!-- Header -->
         <header class="header">
             <div class="profile-section">
                 <div class="profile-info">
                     <h1 class="name">David Steven Ardila Cardona</h1>
-                    <p class="title">Ruby on Rails Developer · Release Manager</p>
-                    <p class="location">Bello, Colombia · +57 319 319 8830 · <a href="mailto:david.fd.251@gmail.com">david.fd.251@gmail.com</a></p>
+                    <p class="title" data-i18n="header.title">Ruby on Rails Developer · Release Manager</p>
+                    <p class="location" data-i18n="header.location">Bello, Colombia · +57 319 319 8830 · <a href="mailto:david.fd.251@gmail.com">david.fd.251@gmail.com</a></p>
                 </div>
             </div>
         </header>
 
-        <!-- Theme Toggle Button -->
-        <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">
-            <i class="fas fa-sun"></i>
-        </button>
-
         <!-- Professional Summary -->
         <section class="section full-width">
-            <h2 class="section-title">PROFESSIONAL SUMMARY</h2>
-            <p class="summary-text">
+            <h2 class="section-title" data-i18n="sections.professional_summary">PROFESSIONAL SUMMARY</h2>
+            <p class="summary-text" data-i18n="summary.text">
                 Software Developer specialized in backend development and system architecture, with strong experience in Ruby on Rails, CI/CD, and cloud environments (AWS). I have defined deployment processes for multidisciplinary teams (over 80 repositories), optimized critical jobs to improve performance by up to 250%, and designed scalable data pipelines (Airflow → data lake → data storage) that power core applications and integrations. I combine high technical rigor with collaborative leadership to elevate team performance and deliver reliable, maintainable systems.
             </p>
         </section>
@@ -42,30 +56,30 @@
         <div class="two-column-layout">
             <!-- Skills -->
             <section class="section column">
-                <h2 class="section-title">SKILLS</h2>
+                <h2 class="section-title" data-i18n="sections.skills">SKILLS</h2>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h3 class="skill-title">Programming:</h3>
+                        <h3 class="skill-title" data-i18n="skills.programming">Programming:</h3>
                         <p class="skill-list">Ruby, Python, JavaScript, Bash, SQL</p>
                     </div>
                     <div class="skill-category">
-                        <h3 class="skill-title">Frameworks & Testing:</h3>
+                        <h3 class="skill-title" data-i18n="skills.frameworks">Frameworks & Testing:</h3>
                         <p class="skill-list">Ruby on Rails, React, Vue, RSpec</p>
                     </div>
                     <div class="skill-category">
-                        <h3 class="skill-title">DevOps & Cloud:</h3>
+                        <h3 class="skill-title" data-i18n="skills.devops">DevOps & Cloud:</h3>
                         <p class="skill-list">CI/CD, GitHub Actions, Jenkins, Docker, Docker Compose, AWS (Lambda, S3, Secrets Manager, ECS, EC2, RDS), Airflow</p>
                     </div>
                     <div class="skill-category">
-                        <h3 class="skill-title">Databases:</h3>
+                        <h3 class="skill-title" data-i18n="skills.databases">Databases:</h3>
                         <p class="skill-list">PostgreSQL, MongoDB, Redis, DuckDB</p>
                     </div>
                     <div class="skill-category">
-                        <h3 class="skill-title">Practices & Tools:</h3>
+                        <h3 class="skill-title" data-i18n="skills.practices">Practices & Tools:</h3>
                         <p class="skill-list">Git (advanced org/admin), Code Review, Release Management, Modularization, Data Pipelines, API Integrations</p>
                     </div>
                     <div class="skill-category">
-                        <h3 class="skill-title">AI Tools:</h3>
+                        <h3 class="skill-title" data-i18n="skills.ai_tools">AI Tools:</h3>
                         <p class="skill-list">ChatGPT, GitHub Copilot, Cursor, Devin, Warp, N8N, MCP Servers</p>
                     </div>
                 </div>
@@ -73,10 +87,10 @@
 
             <!-- Languages -->
             <section class="section column">
-                <h2 class="section-title">LANGUAGES</h2>
+                <h2 class="section-title" data-i18n="sections.languages">LANGUAGES</h2>
                 <div class="languages">
-                    <p><strong>Spanish</strong> — Native</p>
-                    <p><strong>English</strong> — Professional Working Proficiency (B2)</p>
+                    <p data-i18n="languages.spanish"><strong>Spanish</strong> — Native</p>
+                    <p data-i18n="languages.english"><strong>English</strong> — Professional Working Proficiency (B2)</p>
                 </div>
             </section>
         </div>
@@ -85,79 +99,79 @@
         <div class="two-column-layout">
             <!-- Professional Experience -->
             <section class="section column">
-                <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
+                <h2 class="section-title" data-i18n="sections.experience">PROFESSIONAL EXPERIENCE</h2>
                 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3 class="company">ForUsAll — Software Engineer</h3>
-                        <p class="period">Aug 2024 – Aug 2025 · Medellín, Colombia · Hybrid</p>
+                        <h3 class="company" data-i18n="experience.forusall.title">ForUsAll — Software Engineer</h3>
+                        <p class="period" data-i18n="experience.forusall.period">Aug 2024 – Aug 2025 · Medellín, Colombia · Hybrid</p>
                     </div>
                     <ul class="achievements">
-                        <li>Designed and implemented an Airflow-based architecture to feed a data lake and transform it into a data storage powering the main application and multiple integrations.</li>
-                        <li>Refactored a critical +500-line job into 5 modular components, eliminating production errors and improving performance by ~250%.</li>
-                        <li>Contributed to product definitions, proposing scalable, low-maintenance solutions aligned with business goals.</li>
+                        <li data-i18n="experience.forusall.achievements.0">Designed and implemented an Airflow-based architecture to feed a data lake and transform it into a data storage powering the main application and multiple integrations.</li>
+                        <li data-i18n="experience.forusall.achievements.1">Refactored a critical +500-line job into 5 modular components, eliminating production errors and improving performance by ~250%.</li>
+                        <li data-i18n="experience.forusall.achievements.2">Contributed to product definitions, proposing scalable, low-maintenance solutions aligned with business goals.</li>
                     </ul>
                 </div>
 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3 class="company">ABATECH — Software Release Manager</h3>
-                        <p class="period">Apr 2023 – Jul 2024 · Medellín, Colombia · Hybrid</p>
+                        <h3 class="company" data-i18n="experience.abatech_rm.title">ABATECH — Software Release Manager</h3>
+                        <p class="period" data-i18n="experience.abatech_rm.period">Apr 2023 – Jul 2024 · Medellín, Colombia · Hybrid</p>
                     </div>
                     <ul class="achievements">
-                        <li>Defined and implemented release and deployment processes for multidisciplinary teams, managing 80+ active repositories.</li>
-                        <li>Worked across architectures: microfrontends, AWS Lambdas, monoliths, and microservices.</li>
-                        <li>Coordinated frontend, backend, and DevOps teams to align release schedules, resolve blockers, and ensure smooth deployments.</li>
+                        <li data-i18n="experience.abatech_rm.achievements.0">Defined and implemented release and deployment processes for multidisciplinary teams, managing 80+ active repositories.</li>
+                        <li data-i18n="experience.abatech_rm.achievements.1">Worked across architectures: microfrontends, AWS Lambdas, monoliths, and microservices.</li>
+                        <li data-i18n="experience.abatech_rm.achievements.2">Coordinated frontend, backend, and DevOps teams to align release schedules, resolve blockers, and ensure smooth deployments.</li>
                     </ul>
                 </div>
 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3 class="company">ABATECH — Back End Developer</h3>
-                        <p class="period">Sep 2022 – Apr 2023 · Medellín, Colombia · Hybrid</p>
+                        <h3 class="company" data-i18n="experience.abatech_dev.title">ABATECH — Back End Developer</h3>
+                        <p class="period" data-i18n="experience.abatech_dev.period">Sep 2022 – Apr 2023 · Medellín, Colombia · Hybrid</p>
                     </div>
                     <ul class="achievements">
-                        <li>Built and maintained backend services in Ruby on Rails, improving the reliability and performance of core features.</li>
-                        <li>Integrated CI/CD with Jenkins and GitHub Actions to streamline deployments and reduce failures.</li>
-                        <li>Enhanced system observability and error handling, contributing to faster incident resolution.</li>
+                        <li data-i18n="experience.abatech_dev.achievements.0">Built and maintained backend services in Ruby on Rails, improving the reliability and performance of core features.</li>
+                        <li data-i18n="experience.abatech_dev.achievements.1">Integrated CI/CD with Jenkins and GitHub Actions to streamline deployments and reduce failures.</li>
+                        <li data-i18n="experience.abatech_dev.achievements.2">Enhanced system observability and error handling, contributing to faster incident resolution.</li>
                     </ul>
                 </div>
 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3 class="company">Cobelén — Web Developer (Apolo ERP)</h3>
-                        <p class="period">Dec 2021 – Sep 2022 · Medellín, Colombia</p>
+                        <h3 class="company" data-i18n="experience.cobelen.title">Cobelén — Web Developer (Apolo ERP)</h3>
+                        <p class="period" data-i18n="experience.cobelen.period">Dec 2021 – Sep 2022 · Medellín, Colombia</p>
                     </div>
                     <ul class="achievements">
-                        <li>Refactored a high-volume yearly accounting process to generate government reports, significantly improving performance and compliance.</li>
-                        <li>Implemented a materialized view updated by scheduled jobs, enabling fast, reliable report generation in strict legal formats.</li>
-                        <li>Maintained and enhanced ERP features with a focus on backend performance and data integrity.</li>
+                        <li data-i18n="experience.cobelen.achievements.0">Refactored a high-volume yearly accounting process to generate government reports, significantly improving performance and compliance.</li>
+                        <li data-i18n="experience.cobelen.achievements.1">Implemented a materialized view updated by scheduled jobs, enabling fast, reliable report generation in strict legal formats.</li>
+                        <li data-i18n="experience.cobelen.achievements.2">Maintained and enhanced ERP features with a focus on backend performance and data integrity.</li>
                     </ul>
                 </div>
             </section>
 
             <!-- Education -->
             <section class="section column">
-                <h2 class="section-title">EDUCATION</h2>
+                <h2 class="section-title" data-i18n="sections.education">EDUCATION</h2>
                 
                 <div class="education-item">
                     <div class="education-header">
-                        <h3 class="institution">Make It Real Camp</h3>
-                        <p class="period">July 2018 – April 2019</p>
+                        <h3 class="institution" data-i18n="education.makeitreal.title">Make It Real Camp</h3>
+                        <p class="period" data-i18n="education.makeitreal.period">July 2018 – April 2019</p>
                     </div>
-                    <p class="degree">Web Development Online Course</p>
-                    <p class="description">
+                    <p class="degree" data-i18n="education.makeitreal.degree">Web Development Online Course</p>
+                    <p class="description" data-i18n="education.makeitreal.description">
                         Completed an intensive online program focused on the Ruby on Rails framework, following the full-stack learning path provided by Make It Real. Developed a proactive approach to continuous learning, expanding technical knowledge and problem-solving skills.
                     </p>
                 </div>
 
                 <div class="education-item">
                     <div class="education-header">
-                        <h3 class="institution">Uniminuto</h3>
-                        <p class="period">December 2012</p>
+                        <h3 class="institution" data-i18n="education.uniminuto.title">Uniminuto</h3>
+                        <p class="period" data-i18n="education.uniminuto.period">December 2012</p>
                     </div>
-                    <p class="degree">Computer Technology & ICT4D</p>
-                    <p class="description">
+                    <p class="degree" data-i18n="education.uniminuto.degree">Computer Technology & ICT4D</p>
+                    <p class="description" data-i18n="education.uniminuto.description">
                         Began academic training in computer technology with a focus on information and communication technologies for development. Strengthened foundational knowledge in programming and web development, fostering an early commitment to becoming a professional developer.
                     </p>
                 </div>
@@ -167,8 +181,8 @@
         <!-- Contact & Social -->
         <section class="section full-width">
             <div class="contact-info">
-                <p class="mission">Delivering scalable, reliable, and maintainable systems through technical excellence and collaborative leadership.</p>
-                <p class="connect">Open to potential collaborations and new opportunities in backend development or system architecture. Let's connect.</p>
+                <p class="mission" data-i18n="footer.mission">Delivering scalable, reliable, and maintainable systems through technical excellence and collaborative leadership.</p>
+                <p class="connect" data-i18n="footer.connect">Open to potential collaborations and new opportunities in backend development or system architecture. Let's connect.</p>
                 
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/david-ardila-cardona-a376a4187/" target="_blank" class="social-link">
@@ -177,9 +191,6 @@
                     <a href="https://github.com/garoso" target="_blank" class="social-link">
                         <i class="fab fa-github"></i> GitHub
                     </a>
-                    <button class="footer-download" onclick="downloadPDF()">
-                        <i class="fas fa-download"></i> Download PDF
-                    </button>
                 </div>
             </div>
         </section>

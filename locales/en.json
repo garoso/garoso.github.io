@@ -1,0 +1,88 @@
+{
+  "header": {
+    "title": "Ruby on Rails Developer · Release Manager",
+    "location": "Bello, Colombia · +57 319 319 8830 · david.fd.251@gmail.com"
+  },
+  "buttons": {
+    "toggle_theme": "Toggle theme",
+    "download_pdf": "Download PDF"
+  },
+  "sections": {
+    "professional_summary": "PROFESSIONAL SUMMARY",
+    "skills": "SKILLS",
+    "languages": "LANGUAGES",
+    "experience": "PROFESSIONAL EXPERIENCE",
+    "education": "EDUCATION"
+  },
+  "summary": {
+    "text": "Software Developer specialized in backend development and system architecture, with strong experience in Ruby on Rails, CI/CD, and cloud environments (AWS). I have defined deployment processes for multidisciplinary teams (over 80 repositories), optimized critical jobs to improve performance by up to 250%, and designed scalable data pipelines (Airflow → data lake → data storage) that power core applications and integrations. I combine high technical rigor with collaborative leadership to elevate team performance and deliver reliable, maintainable systems."
+  },
+  "skills": {
+    "programming": "Programming:",
+    "frameworks": "Frameworks & Testing:",
+    "devops": "DevOps & Cloud:",
+    "databases": "Databases:",
+    "practices": "Practices & Tools:",
+    "ai_tools": "AI Tools:"
+  },
+  "languages": {
+    "spanish": "Spanish — Native",
+    "english": "English — Professional Working Proficiency (B2)"
+  },
+  "experience": {
+    "forusall": {
+      "title": "ForUsAll — Software Engineer",
+      "period": "Aug 2024 – Aug 2025 · Medellín, Colombia · Hybrid",
+      "achievements": [
+        "Designed and implemented an Airflow-based architecture to feed a data lake and transform it into a data storage powering the main application and multiple integrations.",
+        "Refactored a critical +500-line job into 5 modular components, eliminating production errors and improving performance by ~250%.",
+        "Contributed to product definitions, proposing scalable, low-maintenance solutions aligned with business goals."
+      ]
+    },
+    "abatech_rm": {
+      "title": "ABATECH — Software Release Manager",
+      "period": "Apr 2023 – Jul 2024 · Medellín, Colombia · Hybrid",
+      "achievements": [
+        "Defined and implemented release and deployment processes for multidisciplinary teams, managing 80+ active repositories.",
+        "Worked across architectures: microfrontends, AWS Lambdas, monoliths, and microservices.",
+        "Coordinated frontend, backend, and DevOps teams to align release schedules, resolve blockers, and ensure smooth deployments."
+      ]
+    },
+    "abatech_dev": {
+      "title": "ABATECH — Back End Developer",
+      "period": "Sep 2022 – Apr 2023 · Medellín, Colombia · Hybrid",
+      "achievements": [
+        "Built and maintained backend services in Ruby on Rails, improving the reliability and performance of core features.",
+        "Integrated CI/CD with Jenkins and GitHub Actions to streamline deployments and reduce failures.",
+        "Enhanced system observability and error handling, contributing to faster incident resolution."
+      ]
+    },
+    "cobelen": {
+      "title": "Cobelén — Web Developer (Apolo ERP)",
+      "period": "Dec 2021 – Sep 2022 · Medellín, Colombia",
+      "achievements": [
+        "Refactored a high-volume yearly accounting process to generate government reports, significantly improving performance and compliance.",
+        "Implemented a materialized view updated by scheduled jobs, enabling fast, reliable report generation in strict legal formats.",
+        "Maintained and enhanced ERP features with a focus on backend performance and data integrity."
+      ]
+    }
+  },
+  "education": {
+    "makeitreal": {
+      "title": "Make It Real Camp",
+      "period": "July 2018 – April 2019",
+      "degree": "Web Development Online Course",
+      "description": "Completed an intensive online program focused on the Ruby on Rails framework, following the full-stack learning path provided by Make It Real. Developed a proactive approach to continuous learning, expanding technical knowledge and problem-solving skills."
+    },
+    "uniminuto": {
+      "title": "Uniminuto",
+      "period": "December 2012",
+      "degree": "Computer Technology & ICT4D",
+      "description": "Began academic training in computer technology with a focus on information and communication technologies for development. Strengthened foundational knowledge in programming and web development, fostering an early commitment to becoming a professional developer."
+    }
+  },
+  "footer": {
+    "mission": "Delivering scalable, reliable, and maintainable systems through technical excellence and collaborative leadership.",
+    "connect": "Open to potential collaborations and new opportunities in backend development or system architecture. Let's connect."
+  }
+}
