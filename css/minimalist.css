@@ -147,11 +147,32 @@ body {
 }
 
 /* Content Sections */
+.summary-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.summary-section {
+    border-left: 3px solid var(--border-color);
+    padding-left: 15px;
+}
+
+.summary-subtitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 .summary-text {
     font-size: 1rem;
     line-height: 1.6;
     color: var(--text-muted);
     text-align: justify;
+    margin-bottom: 0;
 }
 
 .skills-grid {
@@ -242,6 +263,28 @@ body {
     left: 0;
     color: var(--text-color);
     font-weight: bold;
+}
+
+.skills-developed {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border-light);
+}
+
+.skills-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.skills-list {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+    font-style: italic;
 }
 
 /* Languages & Contact */

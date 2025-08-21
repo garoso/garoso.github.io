@@ -15,7 +15,12 @@
     "education": "EDUCACIÓN"
   },
   "summary": {
-    "text": "Desarrollador de Software especializado en desarrollo backend y arquitectura de sistemas, con sólida experiencia en Ruby on Rails, CI/CD y entornos cloud (AWS). He definido procesos de despliegue para equipos multidisciplinarios (más de 80 repositorios), optimizado trabajos críticos para mejorar el rendimiento hasta en un 250%, y diseñado pipelines de datos escalables (Airflow → data lake → almacenamiento de datos) que alimentan aplicaciones principales e integraciones. Combino rigor técnico alto con liderazgo colaborativo para elevar el rendimiento del equipo y entregar sistemas confiables y mantenibles."
+    "skills_title": "Habilidades",
+    "skills_text": "David es un desarrollador sólido con profunda experiencia en Ruby on Rails, CI/CD y AWS. Ha definido procesos de despliegue para equipos multidisciplinarios gestionando más de 80 repositorios, coordinado equipos de respuesta rápida para resolver problemas críticos del sistema, optimizado trabajos críticos mejorando el rendimiento hasta en un 250%, y diseñado pipelines de datos escalables que alimentan aplicaciones principales e integraciones.",
+    "culture_title": "Cultura",
+    "culture_text": "Es altamente colaborativo, trabaja bien entre equipos y aporta ideas que alinean soluciones técnicas con objetivos de negocio. David muestra propiedad contribuyendo a definiciones de producto y proponiendo soluciones escalables de bajo mantenimiento que elevan el rendimiento del equipo a través de una coordinación efectiva.",
+    "referral_title": "Notas de Referencia",
+    "referral_text": "Adaptable, consistente en su crecimiento y cómodo trabajando en entornos bilingües. Combina alto rigor técnico con coordinación efectiva de equipos para entregar sistemas confiables y mantenibles. Es alguien en quien confío para entregar impacto y agregar valor a cualquier equipo de ingeniería."
   },
   "skills": {
     "programming": "Lenguajes:",
@@ -37,7 +42,8 @@
         "Diseñé e implementé una arquitectura basada en Airflow para alimentar un data lake y transformarlo en un almacenamiento de datos que potencia la aplicación principal y múltiples integraciones.",
         "Refactoricé un background job crítico de +500 líneas en 5 componentes modulares, eliminando errores de producción y mejorando el rendimiento en ~250%.",
         "Contribuí a las definiciones de producto, proponiendo soluciones escalables y de bajo mantenimiento alineadas con los objetivos del negocio."
-      ]
+      ],
+      "skills": "Airflow, Data Pipelines, AWS, Ruby on Rails, Arquitectura de Sistemas, Optimización de Rendimiento, Estrategia de Producto, Colaboración Interfuncional"
     },
     "abatech_rm": {
       "title": "ABATECH — Software Release Manager",
@@ -46,16 +52,18 @@
         "Definí e implementé procesos de release y despliegue para equipos multidisciplinarios, gestionando más de 80 repositorios activos.",
         "Trabajé en arquitecturas: microfrontends, AWS Lambdas, monolíticos y microservicios.",
         "Coordiné equipos de frontend, backend y DevOps para alinear cronogramas de release, resolver bloqueos y asegurar despliegues fluidos."
-      ]
+      ],
+      "skills": "Gestión de Releases, CI/CD, AWS Lambda, Microservicios, Liderazgo de Equipo, Optimización de Procesos, Coordinación Interequipos, DevOps"
     },
     "abatech_dev": {
       "title": "ABATECH — Desarrollador Back End",
       "period": "Sep 2022 – Abr 2023 · Medellín, Colombia · Híbrido",
       "achievements": [
         "Construí y mantuve servicios backend en Ruby on Rails, mejorando la confiabilidad y rendimiento de características principales.",
-        "Integré CI/CD con Jenkins y GitHub Actions para agilizar despliegues y reducir fallas.",
+        "Coordiné el Equipo de Respuesta Rápida (RRT) para resolver rápidamente bugs, alertas y problemas críticos del sistema en múltiples aplicaciones.",
         "Mejoré la observabilidad del sistema y manejo de errores, contribuyendo a una resolución más rápida de incidentes."
-      ]
+      ],
+      "skills": "Ruby on Rails, Debugging, Coordinación de Equipo, Respuesta a Incidentes, Observabilidad del Sistema, Manejo de Errores, Desarrollo Backend, Resolución de Problemas"
     },
     "cobelen": {
       "title": "Cobelén — Desarrollador Web (Apolo ERP)",
@@ -64,8 +72,10 @@
         "Refactoricé un proceso contable anual de alto volumen para generar reportes gubernamentales, mejorando significativamente el rendimiento y cumplimiento.",
         "Implementé una vista materializada actualizada por trabajos programados, permitiendo generación rápida y confiable de reportes en formatos legales estrictos.",
         "Mantuve y mejoré características del ERP con enfoque en rendimiento backend e integridad de datos."
-      ]
-    }
+      ],
+      "skills": "Desarrollo ERP, Optimización de Bases de Datos, Vistas Materializadas, Cumplimiento Gubernamental, Ajuste de Rendimiento, Integridad de Datos, Desarrollo Web, Automatización de Procesos"
+    },
+    "skills_developed": "Habilidades Desarrolladas:"
   },
   "education": {
     "makeitreal": {
